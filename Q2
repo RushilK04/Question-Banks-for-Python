@@ -1,0 +1,9 @@
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+
+def find_palindromes(lst):
+    return list(filter(is_palindrome, lst))
+
+numbers = list(map(int, input().split()))
+result = find_palindromes(numbers)
+print(result)
