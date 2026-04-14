@@ -1,0 +1,8 @@
+text = input()
+vowels = "aeiouAEIOU"
+v = 0
+c = 0
+for ch in text:
+    if ch in vowels:
+        v += 1
+print(v)
