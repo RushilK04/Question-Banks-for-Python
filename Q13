@@ -1,0 +1,7 @@
+def even_digit_numbers(numbers):
+    return [num for num in numbers if len(str(abs(num))) % 2 == 0]
+
+nums = list(map(int, input("Enter integers separated by space: ").split()))
+result = even_digit_numbers(nums)
+
+print("Numbers with even number of digits:", result)
