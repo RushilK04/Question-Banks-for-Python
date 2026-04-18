@@ -1,0 +1,13 @@
+def find_divisible_numbers(lst, k):
+    result = []
+    for num in lst:
+        if num % k == 0:
+            result.append(num)
+    return result
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+k = int(input("Enter value of k: "))
+
+divisible_numbers = find_divisible_numbers(numbers, k)
+
+print("Numbers divisible by", k, "are:", divisible_numbers)
