@@ -1,0 +1,13 @@
+def remove_duplicates(sentence):
+    words = sentence.split()
+    seen = set()
+    result = []
+    for word in words:
+        if word not in seen:
+            result.append(word)
+            seen.add(word)
+    return ' '.join(result)
+
+text = input()
+output = remove_duplicates(text)
+print(output)
