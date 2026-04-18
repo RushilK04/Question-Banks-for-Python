@@ -1,8 +1,9 @@
+def count_vowels_consonants(s):
+    vowels = "aeiouAEIOU"
+    v = sum(1 for ch in s if ch in vowels)
+    c = sum(1 for ch in s if ch.isalpha() and ch not in vowels)
+    return v, c
+
 text = input()
-vowels = "aeiouAEIOU"
-v = 0
-c = 0
-for ch in text:
-    if ch in vowels:
-        v += 1
-print(v)
+vowels, consonants = count_vowels_consonants(text)
+print(vowels, consonants)
