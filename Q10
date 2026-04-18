@@ -1,0 +1,9 @@
+def common_elements(list1, list2):
+    return list(set(list1) & set(list2))
+
+list1 = list(map(int, input("Enter elements of first list: ").split()))
+list2 = list(map(int, input("Enter elements of second list: ").split()))
+
+result = common_elements(list1, list2)
+
+print("Common elements:", result)
