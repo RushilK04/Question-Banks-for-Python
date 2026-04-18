@@ -1,0 +1,7 @@
+def sum_even(numbers):
+    return sum(num for num in numbers if num % 2 == 0)
+
+nums = list(map(int, input("Enter integers separated by space: ").split()))
+result = sum_even(nums)
+
+print("Sum of even numbers:", result)
