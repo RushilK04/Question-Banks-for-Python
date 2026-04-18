@@ -1,0 +1,17 @@
+def find_pairs(numbers, target):
+    pairs = []
+    n = len(numbers)
+    
+    for i in range(n):
+        for j in range(i + 1, n):
+            if numbers[i] + numbers[j] == target:
+                pairs.append((numbers[i], numbers[j]))
+    
+    return pairs
+
+nums = list(map(int, input("Enter integers separated by space: ").split()))
+target = int(input("Enter target sum: "))
+
+result = find_pairs(nums, target)
+
+print("Pairs with given sum:", result)
